@@ -1,0 +1,10 @@
+{
+  "todos": [{
+       "isDone": false,
+  "task": "ทําสไลดสอน Angular" },
+  {
+  "isDone": false, "task": "อานหนังสือสอบ"
+  }, {
+  "task": "แปลไทย angular.io" }
+  ]
+}

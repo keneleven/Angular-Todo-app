@@ -1,0 +1,8 @@
+<div>
+<input type="text" [(ngModel)]="newTodo" (keydown.enter)="addTodo()"/>
+<input type="radio" name="filter" value="all" [(ngModel)]="filterType">All
+<input type="radio" name="filter" value="done" [(ngModel)]="filterType">Done
+<input type="radio" name="filter" value="undone" [(ngModel)]="filterType">Undone
+<br><br>
+<app-todo *ngFor="let t of todoService.getTodo() | filterTodo: filterType | filterTodo: toggle; index as i" [todo]="t" [index]="i" (remove)="remove($event)"></app-todo>
+</div>
